@@ -5,39 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>අලුත් අවුරුද්දේ A/L ළමයින්ට සුභ ආරංචියක්...</title>
   <style>
-    /* Telegram-style background */
-    body {
+    /* Reset default spacing */
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
         Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      background: #e5e5e5 url('https://web.telegram.org/z/img/bg-pattern-dark.png') repeat;
-      background-size: cover;
+    }
+
+    /* Telegram-like background */
+    body {
+      background: #e5e5e5 url('https://web.telegram.org/z/img/bg-pattern-light.png') repeat;
+      background-size: auto;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      padding: 20px;
     }
 
     .container {
-      background-color: white;
+      background-color: #ffffffcc;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
       max-width: 600px;
-      width: 90%;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 480px) {
       .container {
-        padding: 10px;
-        border-radius: 6px;
+        padding: 12px;
+        border-radius: 10px;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="VW25MR/381" data-width="100%"></script>
+    <script async src="https://telegram.org/js/telegram-widget.js?22"
+            data-telegram-post="VW25MR/381"
+            data-width="100%">
+    </script>
   </div>
 </body>
 </html>
